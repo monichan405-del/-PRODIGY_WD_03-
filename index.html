@@ -1,0 +1,50 @@
+<1DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe PRO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>🎮 Tic Tac Toe PRO</h1>
+
+    <div class="controls">
+        <button onclick="setMode('pvp')">👥 Multiplayer</button>
+        <button onclick="setMode('ai')">🤖 Play vs AI</button>
+
+        <select onchange="difficulty=this.value">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+
+        <button onclick="toggleTheme()">🌙 Theme</button>
+        <button onclick="restartGame()">🔄 Restart</button>
+    </div>
+
+    <div class="status">Turn: X</div>
+
+    <div class="board" id="board"></div>
+
+    <div class="scoreboard">
+        X: <span id="scoreX">0</span> |
+        O: <span id="scoreO">0</span>
+    </div>
+</div>
+
+<canvas id="particles"></canvas>
+
+<!-- JavaScript File -->
+<script src="script.js"></script>
+
+</body>
+</html>
